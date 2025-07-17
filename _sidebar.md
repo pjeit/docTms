@@ -14,13 +14,5 @@
     - [Pairing Truck](master/master-truck/pairing-truck.md)
 
   - [Supplier](master/supplier.md)
-  - [Karyawan](master/karyawan.md)
-  - [COA](master/coa.md)
-  - [Kas / Bank](master/kas-bank.md)
-  - [Role](master/role.md)
-  - [User](master/user.md)
-  - [Permission](master/permission.md)
-  - [Hak Akses](master/hak-akses.md)
-  - [Pengaturan](master/pengaturan.md)
 
 - [LAKA](laka.md)
