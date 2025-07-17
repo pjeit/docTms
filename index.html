@@ -21,9 +21,16 @@
       window.$docsify = {
         name: "TMS",
         loadSidebar: true,
+        loadNavbar: true,
+        mergeNavbar: true,
         subMaxLevel: 2,
         auto2top: true,
         nativeEmoji: true,
+        search: {
+          noData: "Tidak ada data",
+          paths: "auto",
+          placeholder: "Pencarian",
+        },
         plugins: [
           function (hook, vm) {
             hook.afterEach(function (html, next) {
@@ -41,5 +48,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <!-- zoom image -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- search -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   </body>
 </html>
