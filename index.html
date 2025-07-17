@@ -23,7 +23,18 @@
         loadSidebar: true,
         subMaxLevel: 2,
         auto2top: true,
-        repo: "pjeit/docTms",
+        nativeEmoji: true,
+        plugins: [
+          function (hook, vm) {
+            hook.afterEach(function (html, next) {
+              var url =
+                "https://github.com/pjeit/docTms/edit/master/" + vm.route.file;
+              var editHtml = `<p style="text-align: right;"><a href="${url}" target="_blank">✏️ Ubah Dokumentasi</a></p>`;
+
+              next(editHtml + html);
+            });
+          },
+        ],
       };
     </script>
     <!-- Docsify v4 -->
